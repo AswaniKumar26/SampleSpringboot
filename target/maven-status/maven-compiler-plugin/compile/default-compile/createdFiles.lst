@@ -1,0 +1,11 @@
+com\learning\ws\model\UserRecord.class
+com\learning\ws\controller\UserController.class
+com\learning\ws\userserv\impl\UserServImpl.class
+com\learning\ws\model\Request\UserRecordRequest.class
+com\learning\ws\model\ApplicationException.class
+com\learning\ws\exception\ApplicationExceptions.class
+com\learning\ws\exception\CustomServiceException.class
+com\learning\ws\userserv\UserService.class
+com\learning\ws\LearningApplication.class
+com\learning\ws\model\UpdateRequest.class
+com\learning\ws\shared\Utils.class
