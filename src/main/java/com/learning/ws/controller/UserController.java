@@ -42,6 +42,13 @@ public class UserController {
 		return sendResponse(users);
 
 	}
+	
+	@SuppressWarnings("rawtypes")
+	@GetMapping(path = "/status")
+	public ResponseEntity<String> getStatus() {
+			return new ResponseEntity<>("Success",HttpStatus.OK);
+
+	}
 
 	@GetMapping(path = "/{userId}", produces = { MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_VALUE })
 	public ResponseEntity<UserRecord> getUser(@PathVariable String userId) {
@@ -89,5 +96,6 @@ public class UserController {
 			return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 		}
 	}
+	
 
 }
